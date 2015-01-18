@@ -43,3 +43,9 @@ Temporary Items
 .apdisk
 /Test_Managed/obj/Debug
 /ImgFlip_Managed/obj/Debug
+/ImgFlip_Managed/bin
+/ImgFlip_Managed/obj/Release
+/packages
+/Test_Managed/bin
+/Test_Managed/obj/Release
+/ImgFlip_Managed.v12.suo
