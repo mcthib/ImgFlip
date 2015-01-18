@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>ImgFlipApi</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <authors>github@thibautvial.com</authors>
         <projectUrl>https://github.com/mcthib/ImgFlip</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
         <copyright>Free to use for any purpose</copyright>
         <dependencies>
             <group targetFramework=".NETFramework4.5">
-                <dependency id="Newtonsoft.Json" version="6.0.8" />
+                <dependency id="Newtonsoft.Json" version="6.0.5" />
             </group>
         </dependencies>
     </metadata>
