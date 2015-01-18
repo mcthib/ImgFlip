@@ -97,19 +97,18 @@ namespace ImgFlip
         /// <returns>response from ImgFlip</returns>
         private async Task<ImgFlipResponse> CallImgFlipApi(string queryString, int retries = 3)
         {
-            HttpWebRequest request = HttpWebRequest.CreateHttp(queryString);
+            HttpWebRequest request = HttpWebRequest.Create(queryString) as HttpWebRequest;
             WebResponse response = null;
             string payload = string.Empty;
             bool retry = retries > 0;
 
             try
             {
-                await Task.Run(
+                await Task.Factory.StartNew(
                     () =>
                     {
                         response = request.GetResponse();
                     });
-
 
                 using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                 {
@@ -131,7 +130,6 @@ namespace ImgFlip
                 if (response != null)
                 {
                     response.Close();
-                    response.Dispose();
                 }
             }
 
